@@ -1,0 +1,227 @@
+
+
+.intro__inner{
+    text-align: center;
+    margin-top: -400px;
+}
+
+
+.intro{
+    background: url('../images/buisiness.png') no-repeat;
+    background-position: center top;
+    padding-top: 900px;
+}
+
+.intro-title{
+    margin-top: 30px;
+}
+
+.intro-title{
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 64px;
+    margin-bottom: 30px;
+}
+
+.intro-text{
+    width: 900px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.intro-title span{
+    color: #00E0C7;
+}
+
+.form{
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+}
+
+#searchParking{
+    width: 90%;
+    height: 65px;
+    padding: 8px 20px;
+}
+
+#submitParking{
+    position: absolute;
+    top: 4.3px;
+    right: 50px;
+    background: #2285E0;
+    border-radius: 5px;
+    color: #FFFFFF;
+    outline: 0;
+    border: 0;
+    padding: 19px 36px;
+}
+
+#map{
+    margin-bottom: 60px;
+}
+
+table{
+    font-size: 23px;
+}
+
+.results-table{
+    border-collapse: collapse;
+    border: 1;
+    width: 100%;
+    padding: 2px;
+    margin-bottom: 100px;
+
+}
+.results-table th{
+    border: 1;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    background-color: #2285E0;
+    border: 1px solid #000;
+}
+
+.results-table tr td{
+    padding: 20px;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+
+
+
+
+.circular{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    transform: scale(2);
+}
+.circular .inner, .circular .outer, .circular .circle{
+position: absolute;
+z-index: 6;
+height: 100%;
+width: 100%;
+border-radius: 100%;
+box-shadow: inset 0 1px 0 rgba(0,0,0,0.2);
+}
+.circular .inner{
+top: 50%;
+left: 50%;
+height: 80px;
+width: 80px;
+margin: -40px 0 0 -40px;
+background-color: #dde6f0;
+border-radius: 100%;
+box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+.circular .circle{
+z-index: 1;
+box-shadow: none;
+}
+.circular .numb{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 10;
+font-size: 18px;
+font-weight: 500;
+color: #4158d0;
+}
+.circular .bar{
+position: absolute;
+height: 100%;
+width: 100%;
+background: #fff;
+-webkit-border-radius: 100%;
+border-radius: 100%;
+clip: rect(0px, 100px, 100px, 50px);
+}
+.circle .bar .progress{
+position: absolute;
+height: 100%;
+width: 100%;
+-webkit-border-radius: 100%;
+border-radius: 100%;
+clip: rect(0px, 50px, 100px, 0px);
+}
+.circle .bar .progress, .dot span{
+background: #4158d0;
+}
+.circle .left .progress{
+z-index: 1;
+animation: left 4s linear both;
+}
+@keyframes left {
+    100%{
+        transform: rotate(180deg);
+    }
+}
+.circle .right{
+z-index: 3;
+transform: rotate(180deg);
+}
+.circle .right .progress{
+    animation: right 4s linear both;
+    animation-delay: 4s;
+}
+@keyframes right {
+    100%{
+        transform: rotate(180deg);
+    }
+}
+.circle .dot{
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 50%;
+    height: 10px;
+    margin-top: -5px;
+    animation: dot 8s linear both;
+    transform-origin: 0% 50%;
+}
+.circle .dot span {
+    position: absolute;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+@keyframes dot{
+    0% {
+        transform: rotate(-90deg);
+    }
+    50% {
+        transform: rotate(90deg);
+        z-index: 4;
+    }
+    100% {
+        transform: rotate(270deg);
+        z-index: 4;
+    }
+}
+
+.progress__inner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.db-table{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+
+
+.footer{
+    margin-top: 300px;
+}
